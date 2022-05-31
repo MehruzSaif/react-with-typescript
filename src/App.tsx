@@ -1,24 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+let student: string = 'Jeff';
+let age: number = 55;
+let isSmart: boolean = true;
+
+let students: string[] = ['Joe', 'Baiden', 'Trump', 'Obama'];
+let fees: number[] = [12, 21, 14, 44, 55]; 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
