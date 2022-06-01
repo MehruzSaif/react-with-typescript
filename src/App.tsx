@@ -24,6 +24,12 @@ const person: Person = {
   age: 85,
 }
 
+const handleAddUser = (firstName: string, age: number, address: string): string => {
+  const total: number = 50;
+  console.log(firstName, age, address);
+  return address;
+}
+
 function App() {
   return (
     <div className="App">
