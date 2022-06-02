@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 
 const Counter = () => {
 
     interface User {
-        name: string,
-        job: string
+        name?: string,
+        job?: string
     }
 
     const [counter, setCounter] = useState<number>(0);
@@ -17,13 +17,17 @@ const Counter = () => {
         setCounter(counter - 1);
     }
 
-    const handleUserSubmit = (e) => {
+    const handleUserSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const userData = {
             name: 'Adam',
             job: 'Dev'
         }
         setUser(userData)
+    }
+
+    const handleNameChange = (e: ChangeEvent<HTMLInputElement>): void => {
+
     }
 
     return (
